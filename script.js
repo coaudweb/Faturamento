@@ -14,7 +14,7 @@ const views = {
   },
   faturamento: {
     title: 'Faturamento',
-    content: `<section class="billing-frame" aria-label="Faturamento"><div class="billing-loading" role="status"><span class="loading-spinner" aria-hidden="true"></span><span>Carregando faturamento...</span></div><iframe src="https://script.google.com/macros/s/AKfycbzxCiRrduUy3it9ETAn1wggZkHVwwMaPI-Mm544kd54VabWCfctPIjPNLZlX4JObhN0TA/exec" title="Faturamento" loading="lazy"></iframe></section>`
+    content: `<section class="billing-frame" aria-label="Faturamento"><div class="billing-loading" role="status"><span class="loading-spinner" aria-hidden="true"></span><span>Carregando faturamento...</span></div><iframe src="https://script.google.com/macros/s/AKfycbxjnRKnmz0bgbooS9nR6lXOudMj3FgWSfxEA9eri6gyy16CxBD1DtyffWq6k56hF39-Pw/exec" title="Faturamento" loading="lazy"></iframe></section>`
   },
   'auxilio-creche': {
     title: 'Auxílio Creche',
