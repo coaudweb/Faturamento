@@ -14,12 +14,17 @@ const views = {
   },
   faturamento: {
     title: 'Faturamento',
-    content: `<section class="billing-frame" aria-label="Faturamento"><div class="billing-loading" role="status"><span class="loading-spinner" aria-hidden="true"></span><span>Carregando faturamento...</span></div><iframe src="https://script.google.com/macros/s/AKfycbxjnRKnmz0bgbooS9nR6lXOudMj3FgWSfxEA9eri6gyy16CxBD1DtyffWq6k56hF39-Pw/exec" title="Faturamento" loading="lazy"></iframe></section>`
+    content: `<section class="billing-frame" aria-label="Faturamento"><div class="billing-loading" role="status"><span class="loading-spinner" aria-hidden="true"></span><span>Carregando faturamento...</span></div><iframe src="https://script.google.com/macros/s/AKfycbzxCiRrduUy3it9ETAn1wggZkHVwwMaPI-Mm544kd54VabWCfctPIjPNLZlX4JObhN0TA/exec" title="Faturamento" loading="lazy"></iframe></section>`
   },
   'auxilio-creche': {
     title: 'Auxílio Creche',
     icon: 'baby',
     content: `<section class="billing-frame" aria-label="Auxílio Creche"><div class="billing-loading" role="status"><span class="loading-spinner" aria-hidden="true"></span><span>Carregando auxílio creche...</span></div><iframe src="https://script.google.com/macros/s/AKfycbwdfafjIzVD336y4dCy9FJz8o8pyDAQE3Z7RlbGCDwNKryYtkAFe1gC7b0EKPNr6UQ/exec" title="Auxílio Creche" loading="lazy"></iframe></section>`
+  },
+  atestados: {
+    title: 'Atestados',
+    icon: 'file-plus',
+    content: `<section class="billing-frame" aria-label="Atestados"><div class="billing-loading" role="status"><span class="loading-spinner" aria-hidden="true"></span><span>Carregando atestados...</span></div><iframe src="https://script.google.com/macros/s/AKfycbwlAzSMeEH2ldHE7u5v9IUzNohnOpeMWsbbwfGTDhDg7lUb4LUsIa8oJE-Xf_ZStgQ/exec" title="Atestados" loading="lazy"></iframe></section>`
   },
   inss: { title: 'INSS', icon: 'landmark', description: 'Acesse os detalhes das suas contribuições e descontos de INSS.' },
   ferias: { title: 'Férias', icon: 'calendar-range', description: 'Consulte seu período aquisitivo, saldo e programação de férias.' }
@@ -52,7 +57,7 @@ function closeSearch() {
 
 function renderView(viewName) {
   const view = views[viewName];
-  frame.classList.toggle('billing-active', viewName === 'faturamento' || viewName === 'auxilio-creche');
+  frame.classList.toggle('billing-active', viewName === 'faturamento' || viewName === 'auxilio-creche' || viewName === 'atestados');
   if (view.content) {
     frame.innerHTML = view.content;
   } else {
